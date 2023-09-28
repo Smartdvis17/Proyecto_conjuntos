@@ -4,6 +4,7 @@
         <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
         <script src="https://kit.fontawesome.com/2e83633af7.js" crossorigin="anonymous"></script> 
         <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-4bw+/aepP/YC94hEpVNVgiZdgIC5+VKNBQNGCHeKRQN+PtmoHDEXuppvnDJzQIu9" crossorigin="anonymous">
         
@@ -28,19 +29,22 @@
             height: 50PX;
             margin: 0;
             position: fixed;
-            z-index: 10000; 
+            z-index: 1000; 
             background-color: rgb(65, 134, 247);   
             }
 
             .contrato{ 
+
             width: 50%;
             height: 50PX;
             margin-top: 10px; 
+            text-decoration: none;
             float:left;
             text-align:left;
             color: white;
             font-family: helvetica;
             font-size: 100%;
+          
             }
             /* Estilo iconos del encabezado */
             .iconos{ 
@@ -52,6 +56,7 @@
             margin-left:0;
             cursor: pointer;
             padding-right: 0px;
+           
             }
 
             .iconos :hover {
@@ -132,7 +137,7 @@
             }
             #menu li a:hover {
                 color: #0099CC;
-                background: #F2F2F2;
+                background: #d0e8f3;
             }
             #menu input {
                 display: none;
@@ -193,7 +198,7 @@
                 #menu input:checked ~ ul {display:block}
             }
            
-
+        
             /* Estilo del formulario  */
             .cuerpo1 { 
                 width: 80%;
