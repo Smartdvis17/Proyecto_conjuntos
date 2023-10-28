@@ -42,7 +42,7 @@
             float:left;
             text-align:left;
             color: white;
-            font-family: helvetica;
+            font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
             font-size: 100%;
           
             }
@@ -71,7 +71,7 @@
             height: 100%;
             background-color: none;
             float: AUTO;
-            font-family:Arial, Helvetica, sans-serif;
+            font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
             color:#035672;
             margin: auto;
             margin-top: 5px;
@@ -101,6 +101,7 @@
                 bottom: 0;
                 height: 45px;
                 position: fixed;
+                background:  rgb(65, 134, 247);
             }	
             #menu {
                 background:  rgb(65, 134, 247);
@@ -208,7 +209,7 @@
                 border-radius: 4px;
                 border: 1px solid #ccc;
                 box-sizing: border-box;
-                font-family:Arial, Helvetica, sans-serif;
+                font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
                 color:#035672;
                 position: relative;
                 margin-bottom: auto;
@@ -216,7 +217,7 @@
 
             .form{
                 border:0px;
-                font-family: Arial, Helvetica, sans-serif, serif;
+                font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
                 color: none;
                 border-color: none;
                 margin-top: 0px; 
@@ -226,13 +227,13 @@
                 }
 
             /* Estilo de los tipos de datos del formulario */
-            input[type=text],input[type=number],input[type=date],input[type=correo],select {
+            input[type=text],input[type=number],input[type=date],input[type=correo],input[type=password],select, option {
                 width: 100%;
                 box-sizing: border-box;
                 border: 2px solid #ccc;
                 border-radius: 4px;
                 font-size: 16px;
-                font-family: Arial, Helvetica, sans-serif;
+                font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
                 background-color: white;
                 background-image: url('searchicon.png');
                 background-position: 10px 10px; 
@@ -240,8 +241,23 @@
                 padding: 5px 5px 5px 5px;
                 display: inline-block;}
 
+            input[type=checkbox] {
+                width: 20px;
+                height: 20px;
+                box-sizing: border-box;
+                border: 2px solid #ccc;
+                border-radius: 4px;
+                font-size: 10px;
+                font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+                background-color: white;
+                cursor: pointer;
+                background-color: #fff;
+                transition: background-color 0.3s ease-in-out;
+            }
+                 
+
             table, tr, td {
-                font-family: Arial, Helvetica, sans-serif;
+                font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
                 width: auto;
                 height: auto;
                 padding-top: auto;
@@ -253,7 +269,7 @@
                 margin-right: auto;
                 }
                       
-            .addinfo{
+            .addinfo {
                 padding: 5px;
                 width: 50%;
                 height:100%;
@@ -264,9 +280,17 @@
                 margin-right: auto;
                 background: #fdfbfb;
                 }
-
-   
-
+            .recibo {
+                padding: 5px;
+                width: 50%;
+                height:100%;
+                font-size: 18px;
+                border-radius: 10px;
+                border: solid 4px #035672;
+                margin-left: auto;
+                margin-right: auto;
+                background: #fdfbfb;
+                    }
             .option, select, input{
                 width: 100%;
                 height: 40px;
@@ -292,7 +316,7 @@
         
             .documentos{
                 width: 100%;
-                font-family: Arial, Helvetica, sans-serif, serif;
+                font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
                 color: none;
                 border-color: none;
                 margin-top: 0px;                     
@@ -308,7 +332,7 @@
         
             .fuente{
                 text-align: left;
-                font-family: Arial, Helvetica, sans-serif;
+                font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
                 font-size: 30px;
                 text-decoration: none;
                 color: #057196;
@@ -316,9 +340,9 @@
                 text-align: center;
                 }
 
-            .propietario, .inquilino, .reservas, .pagos, .documentos, .search, .multas{
+            .propietario, .inquilino, .reservas, .pagos, .documentos, .search, .multas, anuncios {
                 width: 100%;
-                font-family: Arial, Helvetica, sans-serif, serif;
+                font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
                 color: none;
                 border-color: none;
                 margin-top: 0px; 
@@ -329,7 +353,7 @@
             
             .reservas{
                 width: 100%;
-                font-family: Arial, Helvetica, sans-serif, serif;
+                font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
                 color: none;
                 border-color: none;
                 margin-top: 0px; 
@@ -359,24 +383,24 @@
                 border-radius:5px;
                 cursor:pointer;      
                 }
-                .men_rap{
-                    padding: 5px;
-                    width: 70%;
-                    height:100%;
-                    font-size: 20px;
-                    border-radius: 10px;
-                    border: solid 4px #035672;
-                    margin-left: auto;
-                    margin-right: auto;
-                    background: #fdfbfb;
-                    
-                    }
+
+            .men_rap{
+                padding: 5px;
+                width: 70%;
+                height:100%;
+                font-size: 20px;
+                border-radius: 10px;
+                border: solid 4px #035672;
+                margin-left: auto;
+                margin-right: auto;
+                background: #fdfbfb;
+                }
 
             .menurapido{
                 width: 80%;
                 height: 60px;
                 text-decoration: none;
-                font-family: Arial, Helvetica, sans-serif, serif;
+                font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
                 font-size: 1,8rem;
                 color: #057196;
                 border-color: none;
@@ -389,8 +413,6 @@
                 cursor:pointer;
                 margin-left: 10%;
                 margin-right: 10%; 
-                
-               
             }
 
             .menurapido :hover {
@@ -404,12 +426,87 @@
                 position: relative;    
                 border-radius: 10px; 
                 cursor:pointer;
-
                 }
 
             label{
                 max-width: 100%;
-                 
+                cursor: pointer;
                 }
+
+            .login{
+                padding: 10px 10px 10px 10px;
+                width: 35%;
+                height:100%;
+                font-size: 20px;
+                text-align: center;
+                border-radius: 10px;
+                border: solid 4px #035672;
+                margin-left: auto;
+                margin-right: auto;
+                background: #fdfbfb;
+            }
+
+            .buttons{
+                width: 100%;
+                height: 40px;
+                background:#035672 ;
+                font-size: 1em;
+                border:none;
+                color:white;
+                margin-bottom: 16px;
+                cursor: pointer;
+                border-radius: 4px;
+            }
+
+            .banner{
+                max-width: 100%;
+                height: 60PX;
+                margin-top: 10px;
+                background-color: none; 
+                text-align: center;
+              
+                font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif; }
+               
+            .bienvenida{
+                max-width: 100%;
+                height: 60px;
+                animation:alternate-reverse;
+                animation-duration: 0.3s;
+                color:#057196;
+                font-size: 2em;
+                margin-top: 10px;
+            }
+
+            .piepagina{
+                text-align: center;
+                margin-top: 10px;
+            }
+            
+
+
+            .mensaje{
+                max-width: 90%;
+                height: 100px;
+                text-align: justify;
+        
+            }
+
+            .cartelera{
+                width: 60%;
+                max-width: 90%;
+                align-items: center;
+                text-align: center;
+                margin-top: 0;
+                margin-left: 20%;
+                margin-right: 20%;
+                border: none;
+                
+            }
+
+            .textocartelera{
+                max-width: 90%;
+                text-align: center;
+                margin-top: 0;
+            }
     </head>
 </html>
