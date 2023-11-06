@@ -21,40 +21,71 @@
                         <a href=""><img src="../Imagenes/1.png" width="30";heigth="30"/></a>   
                         <a href=""><img src="../Imagenes/2.png" width="30";heigth="30"/></a>  
                         <a href=""><img src="../Imagenes/3.png" width="30";heigth="30"/></a>
-                        <a href=""><img src="../Imagenes/4.png" width="30";heigth="30"/></a> 
+                        <a href=""><img src="../Imagenes/4.png" width="30";heigth="30"/></a>   
                      </div>
                 </div>
             </header> 
                       
-            <div class="cuerpo"> 
-                <div class="cuerpo1"> 
-
-                    <br/>
-                    <h2 class="fuente"> <b>Datos del propietario </b> </h2>
-                    <div style="overflow-x:auto;">
-                        <table class="propietario"  >
-
-                        <tr Class="Encabezado_tabla">
-                            <td> Id</td> <td> Apartamento </td> <td> Torre </td> <td> Cédula </td> 
-                            <td> Nombres </td><td> Apellidos </td> <td> Fecha de nacimiento </td> <td> Teléfono </td>
-                            <td> Correo </td> <td> Sexo </td>  <td> Historial de pagos </td> <td> Generar planilla </td>
-                        </tr>
-                        <tr>
-                            <td> </td> <td>  </td> <td>  </td> <td>  </td> 
-                            <td>  </td><td>  </td> <td>  </td> <td>  </td>
-                            <td>  </td> <td>  </td> 
-                            </td> <td> <a href='v2historialpagos.html'> <button type="submit" class="btn btn-primary"> Ver </button> </a>
-                            </td> 
-                            <td> <a href='pagos.html'> <button type="reset" class="btn btn-primary"> Generar</button> </a> </td> 
-                        </tr>
-                        </table>
-                    </div>   
-                        <br/>
-                        <br/>
-                </div>                             
+            <div class="cuerpo">
+                <div class="cuerpo1">      
+                    <form class="reservas" action="#" method="post">
+                        <h2 class="fuente"> <b>Ingreso de Visitantes </b> </h2>
+                        <div class="addinfo">
+                            <br/>
+                            Número de apartamento
+                            <br/>
+                            <input type ="text"  placeholder="Número de apartamento">
+                            <br/>
+                            <br/>
+                            Torre o interior
+                            <br/>
+                            <input type ="text"  placeholder="Torre o Interior">
+                            <br/>
+                            <br/>
+                            Identificación visitante
+                            <br/>
+                            <input type ="number"  placeholder="Identificación">
+                            <br/>
+                            <br/>
+                            Nombres y Apellidos
+                            <input type ="text"  placeholder="Nombres y apellidos">
+                            <br/>
+                            <br/>Fecha <br/><input type="date" id="fecharegistro"><br/>
+                            <br/>Hora 
+                            <br/>Desde<input type="time" id="horaregistro"> Hasta<input type="time" id="horaregistro"><br/>
+                            <br/>Motivo  <input type ="text"  ><br/>
+                            <br/>
+                            <div class ="btnadd">
+                                <center>
+                                <button type="submit" class="btn btn-primary">Registrar</button> 
+                                <button type="reset" class="btn btn-secondary">Cancelar</button> 
+                                </center>
+                                <br/>
+                                <br/>
+                            </div>
+                        </div>
+                    </form>
+                            <br/>
+                            <h2 class="fuente"> <b>Listado de visitantes </b> </h2>
+                        <div style="overflow-x:auto;">
+                            <table class="reservas"  >
+                                <tr Class="Encabezado_tabla">
+                                    <td> Id</td> <td> N° apartamento </td> <td> Torre o interior </td> <td> identificación </td> <td> Nombres </td> 
+                                    <td> Fecha </td> <td> Hora inicio </td><td> Hora Final</td><td> Motivo</td><td> Modificar </td> <td> Eliminar </td>
+                                </tr>
+                                <tr>
+                                    <td> </td> <td>  </td> <td>  </td> <td>  </td> 
+                                    <td>  </td> <td>  </td><td>  </td><td>  </td><td>  </td> <td> <button type="submit" class="btn btn-primary">Modificar</button> </td> 
+                                    <td> <button type="reset" class="btn btn-secondary">Eliminar</button> </td> 
+                                </tr>
+                            </table>
+                            <br>
+                            <br/>
+                        </div> 
+                </div>
             </div>
-                        <br/>
-                        <br/>
+            <br/>
+            <br/>
             <div id="menu1"> 
                 <footer class="menu-footer">
                     <nav id="menu" style="border-radius: 0px;">
@@ -78,7 +109,7 @@
                                         <li><a href='v1historialpagos.html'>Generar mes actual</a></li>
                                         <li><a href='propmora.html'>Propietarios en mora</a></li>
                                         <li><a href='propaldía.html'>Propietarios al día</a></li> 
-                                        <li><a href='propgeneral.html'>Listado general</a></li>
+                                        <li><a href='propgeneral.html'>Listado general</a></li> 
                                     </ul> 
                                 </li>
                                 <li><a class='dropdown-arrow' href='http://'>Conserje</a>

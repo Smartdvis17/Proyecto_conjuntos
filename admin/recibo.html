@@ -28,52 +28,74 @@
         </header> 
 
         <div class="cuerpo">
-            <div class="cuerpo1">      
-                <form class="registrodocumentos" action="#" method="post">
-                    <h2 class="fuente"> <b>Recibo de caja </b> </h2>
-                    <div class="recibo">
-
-                        Recibo N° <input type ="number"  placeholder="">
-                        <br/>
-                       
-                        Ciudad  <input type ="text"  placeholder="">
-                        <br/>
-                        Fecha <input type="date" id="fecharegistro">
-                        <br/>
-                        Pagado a  <input type ="text"  placeholder="">
-                        <br/>
-                        Concepto  <input type ="text"  placeholder="">
-                        <br/>
-                        Valor <input type ="number"  placeholder="">
-                        <br/>
-                        Valor en letras <input type ="number"  placeholder="">
-                        <br/>
-                        <div class ="btnadd">
+            <div class="cuerpo1"> 
+                <fieldset class="form">
+                    <form action="#" method="post">       
+                        <h2 class="fuente"> <b> Recibo de caja  </b> </h2>
+                        <div style="overflow-x:auto;">
+                        <table class="recibo">
+                            <tr Class="Encabezado_tabla" >
+                                <td class="rc"  colspan="2"><label> Contrato N° 001 </label></td>                                
+                                <td colspan="2"> 
+                                    <label for=""> Recibo N°: 001<input type="hidden" id="" name="" value="" /></label>
+                                    <br/>
+                                    <label for=""> Fecha: 31/10/2023 <input type="hidden" id="" name="" value="" /></label>
+                                </td> 
+                               <tr Class="Encabezado_tabla">
+                                    <td class="" colspan="4"> 
+                                        <label>Datos Propietario </label>
+                                    </td> 
+                                </tr> 
+                                <tr class="datosproprc">
+                                    <td class="rc2" colspan="2">
+                                        <label>Identificación: 123456 <input type="hidden" id="" name="" value="" /></label>
+                                        <br/>
+                                        <label>Popritario: Ana Salcedo <input type="hidden" id="" name="" value="" /></label>
+                                        <br/>
+                                    </td> 
+                                    <td class="rc2" colspan="2"> 
+                                        <label>Apartamento: 202<input type="hidden" id="" name="" value="" /></label>
+                                        <br/>
+                                        <label>Torre: 1 <input type="hidden" id="" name="" value="" /> </label>
+                                    </td> 
+                                </tr>
+                                <tr Class="Encabezado_tabla" >
+                                    <td><label>Concepto</label></td>  
+                                    <td><label> Mes</label></td> 
+                                    <td><label> Año </label></td> 
+                                    <td><label> Valor </label></td>    
+                                </tr>
+                                    <tr>
+                                        <td class="rc2"><label>Arriendo</label></td>  
+                                        <td><label> 11</label></td> 
+                                        <td><label> 2023 </label></td> 
+                                        <td><label> $1.600.000 </label></td>    
+                                    </tr>
+                                    <tr class="rc5">
+                                        <td class="rc2"><label>Multas</label></td>  
+                                        <td><label> 05</label></td> 
+                                        <td><label> 2023 </label></td> 
+                                        <td><label> $600.000 </label></td>    
+                                    </tr>
+                                    <tr Class="Encabezado_tabla" >
+                                        <td colspan="3"><label>Total</label></td>  
+                                        <td><label> $2.200.000 </label></td>    
+                                    </tr>
+                                    <tr>
+                                        <td  class="rc2" colspan="4"><label>Valor en letras: Dos millones doscientos mil pesos m/cte<input type="hidden" id="" name="" value="" /></label></td>     
+                                    </tr>
+                            </table>
                             <br/>
-                            <center>
-                            <button type="submit" class="btn btn-primary">Aprobar</button> 
-                            <button type="reset" class="btn btn-secondary">Cancelar</button> 
+                            <center> 
+                                <td> <button type="submit" class="btn btn-primary">Guardar</button> </td> 
+                                <td> <button type="reset" class="btn btn-secondary">Cancelar</button> </td>
+                                <td> <button type="submit" class="btn btn-primary">Imprimir</button> </td>  
+                                <td> <a href='v1historialpagos.html'><button type="submit" class="btn btn-secondary">Regresar</button></a></td> 
                             </center>
-                        </div>
-                        <br/>
-                    </div>
-                </form>
-                        <br/>
-                        <h2 class="fuente"> <b> Recibos de caja  </b> </h2>
-                    <div style="overflow-x:auto;">
-                        <table class="documentos"  >
-                            <tr Class="Encabezado_tabla">
-                                <td> Id</td> <td> Recibo N° </td> <td> Ciudad </td><td> Fecha </td> <td> Pagado a </td> <td> Cencepto </td>  <td> Valor </td> 
-                                <td> Valor en letras </td> <td> Imprimir</td> 
-                            </tr>
-                            <tr>
-                                <td> </td> <td>  </td> <td>  </td> <td>  </td><td>  </td><td>  </td><td>  </td> 
-                                <td>  </td>  <td> <button type="submit" class="btn btn-primary">Imprimir</button> </td>
-                            </tr>
-                        </table>
-                        <br>
                         <br/>
                     </div> 
+                </form>
+            </fieldset >
             </div>
         </div>
         <br/>
@@ -98,16 +120,17 @@
                             <li><a class='dropdown-arrow' href='http://'>Propietarios</a>
                                 <!--Sub menu de Multas-->
                                 <ul class='sub-menus'>
-                                    <li><a href='http://'>sub 2</a></li>
-                                    <li><a href='http://'>Sub 3</a></li>
-                                    <li><a href='http://'>sub 4</a></li> 
+                                    <li><a href='v1historialpagos.html'>Generar mes actual</a></li>
+                                    <li><a href='propmora.html'>Propietarios en mora</a></li>
+                                    <li><a href='propaldía.html'>Propietarios al día</a></li> 
+                                    <li><a href='propgeneral.html'>Listado general</a></li>
                                 </ul> 
                             </li>
-                            <li><a class='dropdown-arrow' href='http://'>Vigilantes</a>
+                            <li><a class='dropdown-arrow' href='http://'>Conserje</a>
                                 <!-- Sub menu de apartamentos-->
                                 <ul class='sub-menus'>
-                                    <li><a href='http://'>Sub 1</a></li>
-                                    <li><a href='http://'>Sub 2</a></li>
+                                    <li><a href='ingresovisitantes.html'>Registro de visitantes</a></li>
+                                    <li><a href='indexreservas.html'>Reservas</a></li>
                                     <li><a href='http://'>Sub 3</a></li> 
                                 </ul> 
                             </li>
