@@ -1,0 +1,153 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+    <html xmlns="http://www.w3.org/1999/xhtml">
+        <head>
+            <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+            <meta http-equiv="X-UA-Compatible" content="IE=edge">
+            <meta name="viewport" content="width=device-width, initial-scale=1.0">
+            <script src="https://kit.fontawesome.com/2e83633af7.js" crossorigin="anonymous"></script> 
+            <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-4bw+/aepP/YC94hEpVNVgiZdgIC5+VKNBQNGCHeKRQN+PtmoHDEXuppvnDJzQIu9" crossorigin="anonymous">
+            <link rel="stylesheet" href="../style.css">
+            <title>Proyecto_sena</title>
+        </head>
+
+        <body>
+            <header class="cabecera"> 
+                <div class="encabezado"> 
+                     <div class="contrato"> 
+                     Contrato
+                     </div>   
+    
+                     <div class="iconos">  
+                        <a href=""><img src="../Imagenes/1.png" width="30";heigth="30"/></a>   
+                        <a href=""><img src="../Imagenes/2.png" width="30";heigth="30"/></a>  
+                        <a href=""><img src="../Imagenes/3.png" width="30";heigth="30"/></a>
+                        <a href=""><img src="../Imagenes/4.png" width="30";heigth="30"/></a>   
+                     </div>
+                </div>
+            </header> 
+                      
+            <div class="cuerpo"> 
+                <div class="cuerpo1"> 
+                   
+                    <fieldset class="form">
+                        <form action="#" method="post">  
+                            <h2 class="fuente"> <b> Agregar Multas </b></h2>
+                            <div class="addinfo"> 
+                                <br/>    
+                                Número del apartamento 
+                                <br/><input type="text" id="apartamento"/><br/>
+                                <br/>
+                                Torre o interior <br/><input type="text" id="torre"/><br/>
+                                <br/>
+                                Tipo de multa 
+                                <br/>
+                                <select name="multa" > 
+                                    <option value="economica">Economica</option>
+                                    <option value="verbal">Amonestación verbal</option>
+                                    <option value="escrita">Amonestación escrita</option>
+                                    <option value="suspension">Suspension</option>
+                                    
+                                </select>
+                                <br/>   
+                                <br/>  
+                                Motivo de la multa 
+                                <br/>
+                                <select name="multa" > 
+                                    <option value="mora">Mora en el pago</option>
+                                    <option value="orden">Alteración del orden</option>
+                                    <option value="daños">Daños fisicos o materiales</option>
+                                    <option value="otro">Otro</option>
+                                    </select>
+                                <br/>
+                                <br/>
+                                Descripción de la multa
+                                <br/><input type="text" id="descripcion" placeholder="Describa brevemente el motivo de la multa"/><br/>
+                                <br/>
+                                Fecha de la multa
+                                <br/><input type="date" id="fechamulta"/><br/>
+                                <br/>
+                                Valor <br/><input type="number" id="valor"/><br/>
+                                <br/>
+                                Evidencias <br/><input type="file" id="evidencias"/><br/>
+                                <br/>
+                               
+                             
+                                <center> 
+                                    <td> <button type="submit" class="btn btn-primary">Guardar</button> </td> 
+                                    <td> <button type="reset" class="btn btn-secondary">Cancelar</button> </td> 
+                                </center>
+                                <br/>
+                                <br/>
+                            </div>    
+                        </form>
+                    </fieldset >
+                        <br/>
+                        <h2 class="fuente"> <b>Listado de multas </b> </h2>
+                    <div style="overflow-x:auto;">
+                        <table class="multas"  >
+
+                            <tr Class="Encabezado_tabla">
+                                <td> Id</td> <td> Apartamento </td> <td> Torre </td> <td> Tipo de multa </td> 
+                                <td> Motivo de la multa </td><td> Descripcion de la multa </td> <td> Fecha de la multa </td> <td> Valor </td>
+                                <td> Evidencias </td>  <td> Modificar </td> <td> Eliminar </td>
+                            </tr>
+                            <tr>
+                                <td> </td> <td>  </td> <td>  </td> <td>  </td> 
+                                <td>  </td><td>  </td> <td>  </td> <td>  </td>
+                                <td>  </td>   <td> <button type="submit" class="btn btn-primary">Modificar</button> </td> 
+                                <td> <button type="reset" class="btn btn-secondary">Eliminar</button> </td> 
+                            </tr>
+                        </table>
+                    </div>   
+                            <br/>
+                            <br/>                       
+            </div>
+                        <br/>
+                        <br/>
+                        <div id="menu1"> 
+                            <footer class="menu-footer">
+                                <nav id="menu" style="border-radius: 0px;">
+                                    <input type='checkbox' id='responsive-menu' onclick='updatemenu()'><label></label>
+                                    <ul>
+                                            <li><a href=''>Inicio</a></li>
+                                            
+                                            <li><a class='dropdown-arrow' href='http://'>Administración</a>
+                                                <ul class='sub-menus'>
+                                                    <li><a href='addinfo.html'> Agregar Información</a></li>
+                                                    <li><a href='addindex.html'> Agregar documentos</a></li>
+                                                    <li><a href='indexsearch.html'>Busqueda</a></li>
+                                                    <li><a href='indexreservas.html'>Reservas</a></li>
+                                                    <li><a href='addmultas.html'>Agregar Multas</a></li>
+                                                    <li><a href='pagos.html'>Pagos</a></li>
+                                                </ul> 
+                                            </li>
+                                            <li><a class='dropdown-arrow' href='http://'>Propietarios</a>
+                                                <!--Sub menu de Multas-->
+                                                <ul class='sub-menus'>
+                                                    <li><a href='v1historialpagos.html'>Generar mes actual</a></li>
+                                                    <li><a href='propmora.html'>Propietarios en mora</a></li>
+                                                    <li><a href='propaldía.html'>Propietarios al día</a></li> 
+                                                    <li><a href='propgeneral.html'>Listado general</a></li>
+                                                </ul> 
+                                            </li>
+                                            <li><a class='dropdown-arrow' href='http://'>Conserje</a>
+                                                <!-- Sub menu de apartamentos-->
+                                                <ul class='sub-menus'>
+                                                    <li><a href='ingresovisitantes.html'>Registro de visitantes</a></li>
+                                                    <li><a href='indexreservas.html'>Reservas</a></li>
+                                                    <li><a href='http://'>Sub 3</a></li> 
+                                                </ul> 
+                                            </li>
+                                            <li><a class='dropdown-arrow' href='http://'>Otro</a>
+                                                <ul class='sub-menus'>
+                                                    <li><a href='http://'>Sub 2</a></li>
+                                                    <li><a href='http://'>Sub 3</a></li> 
+                                                </ul> 
+                                                </li>
+                                    </ul>
+                                </nav>
+                            </footer>
+                            <script src="scrip.js"></script>
+                        </div>
+        </body>
+    </html>
