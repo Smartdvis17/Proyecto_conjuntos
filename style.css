@@ -330,7 +330,7 @@
                 text-align: center;
                 }
 
-            .propietario, .inquilino, .reservas, .pagos, .documentos, .search, .multas, anuncios {
+            .propietario, .inquilino, .reservas, .pagos, .documentos, .search, .multas, .anuncios {
                 width: 100%;
                 font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
                 color: none;
@@ -378,7 +378,7 @@
                     padding: 5px;
                     width: 70%;
                     height:100%;
-                    font-size: 20px;
+                    font-size: 2em;
                     border-radius: 10px;
                     border: solid 4px #035672;
                     margin-left: auto;
@@ -387,9 +387,10 @@
                     }
 
                     .menurapido{
-                        width: 80%;
+                        width: 60%;
                         height: 60px;
                         text-decoration: none;
+                        text-align: center;
                         font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
                         font-size: 1,8rem;
                         color: #057196;
@@ -397,22 +398,22 @@
                         margin-top: 0px; 
                         background:#fdfbfb;
                         padding: 0px;
-                        position: relative;    
+                        position: absolute;    
                         border-radius: 10px;
                         border: solid 3px  #057196;  
                         cursor:pointer;
-                        margin-left: 10%;
-                        margin-right: 10%; 
+                        margin-left: 5%;
+                        margin-right: 5%; 
                     }
 
             .menurapido :hover {
-                width: 90%;
+                width: 80%;
                 height: 100%;
                 overflow:hidden;
                 -webkit-transform:scale(1.3);transform:scale(1.3);
                 color: #FFF;
                 background: rgb(65, 134, 247);
-                padding: 10px;
+                padding: 0px;
                 position: relative;    
                 border-radius: 10px; 
                 cursor:pointer;
@@ -438,9 +439,9 @@
 
             .buttons{
                 width: 100%;
-                height: 40px;
+                height: 100px;
                 background:#035672 ;
-                font-size: 1em;
+                font-size: 1,5em;
                 border:none;
                 color:white;
                 margin-bottom: 16px;
@@ -538,5 +539,36 @@
                 background:#5a636a;
                 max-width: 100%;
             }
+
+/* este es el estilo para los botones de la pantalla de inicio y menu rapido 
+            .boton-enlace {
+                max width: 100%;
+                height: 80px;
+                text-decoration: none;
+                text-align: center;
+                font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+                font-size: 1,8rem;
+                color: #057196;
+                background:#fdfbfb;
+                border-radius: 10px;
+                border: solid 3px  #057196;  
+                cursor:pointer;
+                padding: 10px 10px 10px 10px;
+                align-items: center;
+            }
+
+            .boton-enlace :hover {
+                width: 70%;
+                height: 100%;
+                overflow:hidden;
+                -webkit-transform:scale(1.3);transform:scale(1.3);
+                color: #FFF;
+                background: rgb(65, 134, 247);
+                padding: 0px;
+                position: relative;    
+                border-radius: 10px; 
+                cursor:pointer;
+                text-align: center;
+                            }*/
     </head>
 </html>
